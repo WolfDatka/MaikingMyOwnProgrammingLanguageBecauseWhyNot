@@ -1,0 +1,8 @@
++-------------+----------+------------------------------------------+---------------+--------------------+-------------------+
+| Instruction | Mnemonic |               Description                |   Operands    | Registers Affected |  Register Values  |
++-------------+----------+------------------------------------------+---------------+--------------------+-------------------+
+| AND         | AND      | Bitwise AND operation                    | AND dest, src | dest               | dest = dest & src |
+| OR          | OR       | Bitwise OR operation                     | OR dest, src  | dest               | `dest = dest      |
+| XOR         | XOR      | Bitwise XOR operation                    | XOR dest, src | dest               | dest = dest ^ src |
+| NOT         | NOT      | Bitwise NOT operation (one's complement) | NOT r/m       | r/m                | r/m = ~r/m        |
++-------------+----------+------------------------------------------+---------------+--------------------+-------------------+

@@ -1,0 +1,11 @@
++------------------------------+----------+----------------------------------------------+-----------------------+--------------------+--------------------------------------------+
+|         Instruction          | Mnemonic |                 Description                  |       Operands        | Registers Affected |              Register Values               |
++------------------------------+----------+----------------------------------------------+-----------------------+--------------------+--------------------------------------------+
+| Jump                         | JMP      | Unconditional jump to the specified label    | JMP label             | N/A                | Control flow changes to label              |
+| Jump if Equal (Zero)         | JE/JZ    | Jump if zero flag is set                     | JE label / JZ label   | N/A                | Control flow changes to label if ZF=1      |
+| Jump if Not Equal (Not Zero) | JNE/JNZ  | Jump if zero flag is not set                 | JNE label / JNZ label | N/A                | Control flow changes to label if ZF=0      |
+| Jump if Greater              | JG       | Jump if greater (ZF=0 and SF=OF)             | JG label              | N/A                | Control flow changes to label if greater   |
+| Jump if Less                 | JL       | Jump if less (SF ≠ OF)                       | JL label              | N/A                | Control flow changes to label if less      |
+| Call                         | CALL     | Call a procedure (push return address)       | CALL label            | RSP                | Control flow jumps to label                |
+| Return                       | RET      | Return from a procedure (pop return address) | RET                   | RSP                | Control flow returns to the address in RSP |
++------------------------------+----------+----------------------------------------------+-----------------------+--------------------+--------------------------------------------+

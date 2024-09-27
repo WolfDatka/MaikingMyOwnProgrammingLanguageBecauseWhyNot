@@ -1,0 +1,9 @@
++------------------------+----------+--------------------------------------+---------------+--------------------+--------------------------------------+
+|      Instruction       | Mnemonic |             Description              |   Operands    | Registers Affected |           Register Values            |
++------------------------+----------+--------------------------------------+---------------+--------------------+--------------------------------------+
+| Move                   | MOV      | Copy data from source to destination | MOV dest, src | dest, src          | dest = src                           |
+| Push                   | PUSH     | Push data onto the stack             | PUSH r/m      | RSP                | RSP = RSP - 8, value stored at [RSP] |
+| Pop                    | POP      | Pop data from the stack              | POP r/m       | RSP, r/m           | r/m = [RSP], RSP = RSP + 8           |
+| Exchange               | XCHG     | Exchange values between two operands | XCHG r/m, r   | r/m, r             | temp = r/m, r/m = r, r = temp        |
+| Load Effective Address | LEA      | Load address of the memory operand   | LEA r, mem    | r                  | r = address of mem                   |
++------------------------+----------+--------------------------------------+---------------+--------------------+--------------------------------------+

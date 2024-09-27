@@ -1,0 +1,6 @@
++-------------+----------+---------------------------+----------------+--------------------+--------------------------------+
+| Instruction | Mnemonic |        Description        |    Operands    | Registers Affected |        Register Values         |
++-------------+----------+---------------------------+----------------+--------------------+--------------------------------+
+| Compare     | CMP      | Compare two operands      | CMP dest, src  | N/A                | Sets flags based on dest - src |
+| Test        | TEST     | Bitwise AND and set flags | TEST dest, src | N/A                | Sets flags based on dest & src |
++-------------+----------+---------------------------+----------------+--------------------+--------------------------------+

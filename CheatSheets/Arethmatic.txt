@@ -1,0 +1,12 @@
++-------------------+----------+------------------------------------+---------------+--------------------+-------------------------------------------------------+
+|    Instruction    | Mnemonic |            Description             |   Operands    | Registers Affected |                    Register Values                    |
++-------------------+----------+------------------------------------+---------------+--------------------+-------------------------------------------------------+
+| Addition          | ADD      | Add two operands                   | ADD dest, src | dest               | dest = dest + src                                     |
+| Subtraction       | SUB      | Subtract second operand from first | SUB dest, src | dest               | dest = dest - src                                     |
+| Unsigned Multiply | MUL      | Unsigned multiply (RAX)            | MUL r/m       | RAX, RDX           | RDX:RAX = RAX * r/m (RDX = high, RAX = low)           |
+| Signed Multiply   | IMUL     | Signed multiply                    | IMUL r/m      | RAX, RDX           | RDX:RAX = RAX * r/m (RDX = high, RAX = low)           |
+| Unsigned Divide   | DIV      | Unsigned divide (RAX)              | DIV r/m       | RAX, RDX           | RAX = RDX:RAX / r/m (RAX = quotient, RDX = remainder) |
+| Signed Divide     | IDIV     | Signed divide                      | IDIV r/m      | RAX, RDX           | RAX = RDX:RAX / r/m (RAX = quotient, RDX = remainder) |
+| Increment         | INC      | Increment operand by 1             | INC r/m       | r/m                | r/m = r/m + 1                                         |
+| Decrement         | DEC      | Decrement operand by 1             | DEC r/m       | r/m                | r/m = r/m - 1                                         |
++-------------------+----------+------------------------------------+---------------+--------------------+-------------------------------------------------------+

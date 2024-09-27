@@ -1,0 +1,9 @@
++----------------+----------+-----------------------------------------------------------+----------+--------------------+---------------------------------+
+|  Instruction   | Mnemonic |                        Description                        | Operands | Registers Affected |         Register Values         |
++----------------+----------+-----------------------------------------------------------+----------+--------------------+---------------------------------+
+| Move String    | MOVSB    | Move byte from source string to destination string        | MOVSB    | RDI, RSI           | *RDI = *RSI, increment pointers |
+| Move String    | MOVSW    | Move word from source string to destination string        | MOVSW    | RDI, RSI           | *RDI = *RSI, increment pointers |
+| Move String    | MOVSD    | Move double word from source string to destination string | MOVSD    | RDI, RSI           | *RDI = *RSI, increment pointers |
+| Compare String | CMPSB    | Compare bytes in strings                                  | CMPSB    | RDI, RSI           | Sets flags based on *RSI - *RDI |
+| Scan String    | SCASB    | Scan byte in string (search)                              | SCASB    | RDI                | Sets flags based on *RDI        |
++----------------+----------+-----------------------------------------------------------+----------+--------------------+---------------------------------+
