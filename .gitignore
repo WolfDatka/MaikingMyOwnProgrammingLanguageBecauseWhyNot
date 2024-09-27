@@ -1,0 +1,8 @@
+# No extension
+*
+!*/
+!*.*
+!LICENSE
+
+# Extensions
+*.o
