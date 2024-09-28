@@ -1,0 +1,20 @@
++----------+-------------+--------------+--------------+-------------+---------------------------------------------------------------------------------------------+
+| Register | Full 64-bit | Lower 32-bit | Lower 16-bit | Lower 8-bit |                                         Typical Use                                         |
++----------+-------------+--------------+--------------+-------------+---------------------------------------------------------------------------------------------+
+| RAX      | RAX         | EAX          | AX           | AL          | Return value from functions, accumulator for arithmetic operations.                         |
+| RBX      | RBX         | EBX          | BX           | BL          | Base register, often used as a pointer to data.                                             |
+| RCX      | RCX         | ECX          | CX           | CL          | Counter for loops, 3rd function argument in Linux calling convention.                       |
+| RDX      | RDX         | EDX          | DX           | DL          | 2nd function argument, I/O operations, holds remainder after division.                      |
+| RSI      | RSI         | ESI          | SI           | SIL         | Source index for string operations, 1st function argument.                                  |
+| RDI      | RDI         | EDI          | DI           | DIL         | Destination index for string operations, used for memory copying, 1st function argument.    |
+| RBP      | RBP         | EBP          | BP           | BPL         | Base pointer for stack frames, often used to access function arguments and local variables. |
+| RSP      | RSP         | ESP          | SP           | SPL         | Stack pointer, points to the top of the stack.                                              |
+| R8       | R8          | R8D          | R8W          | R8B         | 4th function argument in Linux x64 calling convention.                                      |
+| R9       | R9          | R9D          | R9W          | R9B         | 5th function argument.                                                                      |
+| R10      | R10         | R10D         | R10W         | R10B        | Temporary register (caller-saved).                                                          |
+| R11      | R11         | R11D         | R11W         | R11B        | Temporary register (caller-saved).                                                          |
+| R12      | R12         | R12D         | R12W         | R12B        | Callee-saved register.                                                                      |
+| R13      | R13         | R13D         | R13W         | R13B        | Callee-saved register.                                                                      |
+| R14      | R14         | R14D         | R14W         | R14B        | Callee-saved register.                                                                      |
+| R15      | R15         | R15D         | R15W         | R15B        | Callee-saved register.                                                                      |
++----------+-------------+--------------+--------------+-------------+---------------------------------------------------------------------------------------------+
