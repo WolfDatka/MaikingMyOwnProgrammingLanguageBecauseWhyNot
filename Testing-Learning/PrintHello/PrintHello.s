@@ -15,6 +15,6 @@ _start:
     syscall                              ; invoke the system call
 
     ; Exit the program
-    mov rdi, 0                          ; exit code (0 = success)
     mov rax, 60                         ; syscall number for sys_exit
+    mov rdi, 0                          ; exit code (0 = success)
     syscall                              ; invoke the system call
