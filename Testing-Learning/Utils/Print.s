@@ -41,4 +41,3 @@ _printLoop:
     syscall
 
     ret
-
